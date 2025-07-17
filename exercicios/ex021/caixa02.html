@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(240, 134, 92);
+            padding: 10px;
+            margin: 10px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        nav {
+            background-color: rgba(255, 0, 140, 0.4);
+            padding: 3px;
+            box-shadow: 1px 1px 1px rgba(46, 0, 25, 0.5);
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: aliceblue;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: azure;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 15px 0px;
+            box-shadow: 1px 1px 1px rgba(0, 71, 71, 0.4);
+        }
+
+        section {
+            padding: 4px;
+        }
+
+        article {
+            background-color: gray;
+            padding: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: 2px 2px 2px rgba(54, 54, 54, 0.4);
+        }
+
+        article > aside {
+            background-color: dimgrey;
+        }
+
+        footer {
+            background-color: coral;
+            text-align: center;
+            color: darkblue;
+            margin: 0px;
+            padding: 4px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="">#</a>
+            <a href="">#</a>
+            <a href="">#</a>
+            <a href="">#</a>
+            <a href="">#</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            Esportes Politica Tecnologia
+        </section>
+        <section>
+            <article>
+                <h2>Noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos hic excepturi reiciendis ex amet assumenda, neque dolore ipsa blanditiis fugiat? Rerum architecto ab dicta, explicabo id reiciendis sint laudantium numquam.</p>
+                <aside>
+                    <p>artigo de yuri</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        Feito por yuri
+    </footer>
+</body>
+</html>
