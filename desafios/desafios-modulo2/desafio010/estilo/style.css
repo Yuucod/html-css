@@ -60,6 +60,7 @@ nav {
     display: flex;
     justify-content: left;
     width: 100%;
+    padding: 10px;
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.5);
 }
 
