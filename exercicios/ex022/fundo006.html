@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de fundo</title>
+    <title>Fundo fixo de tela</title>
 </head>
 <style>
     body {
         height: 100vh;
-        background-color: black;
+        /*background-color: black;
         background-image: url(imagens/wallpaper002.jpg);
         background-position: center top;
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;*/
+
+        /* SHORTHAND - BACKGROUND 
+            ORDEM DE ESCRITA
+            Color > Image > Position > Repeat > [Size]> Attachment 
+            Mas nao fuciona se o SIZE estiver dentro do shorthand
+        */
+
+        background:black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+        background-size: cover;
+
     }
 
     main {
         background-color: white;
-        width: 400px;
+        max-width: 400px;
         padding: 15px;
         margin: auto;
         border: 1px solid black;
@@ -27,6 +38,18 @@
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, possimus quod sunt saepe sit tenetur eaque provident. Pariatur, repellendus sapiente voluptatibus saepe laudantium ea a ipsum, esse nesciunt quia dolorum!
+        Maiores numquam, delectus fugiat molestias ad est! Minima quasi at illo alias eaque, reprehenderit, suscipit maxime amet ipsum ad assumenda quibusdam ab odit, numquam dolor! Eum soluta tempora hic natus?
+        Beatae, laborum repellat ipsa, deleniti totam magnam earum soluta debitis, non esse dolorum hic. Eveniet velit, reprehenderit sequi nisi quos adipisci molestias sunt officia pariatur voluptatem culpa aspernatur, voluptatibus soluta!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, possimus quod sunt saepe sit tenetur eaque provident. Pariatur, repellendus sapiente voluptatibus saepe laudantium ea a ipsum, esse nesciunt quia dolorum!
+        Maiores numquam, delectus fugiat molestias ad est! Minima quasi at illo alias eaque, reprehenderit, suscipit maxime amet ipsum ad assumenda quibusdam ab odit, numquam dolor! Eum soluta tempora hic natus?
+        Beatae, laborum repellat ipsa, deleniti totam magnam earum soluta debitis, non esse dolorum hic. Eveniet velit, reprehenderit sequi nisi quos adipisci molestias sunt officia pariatur voluptatem culpa aspernatur, voluptatibus soluta!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, possimus quod sunt saepe sit tenetur eaque provident. Pariatur, repellendus sapiente voluptatibus saepe laudantium ea a ipsum, esse nesciunt quia dolorum!
+        Maiores numquam, delectus fugiat molestias ad est! Minima quasi at illo alias eaque, reprehenderit, suscipit maxime amet ipsum ad assumenda quibusdam ab odit, numquam dolor! Eum soluta tempora hic natus?
+        Beatae, laborum repellat ipsa, deleniti totam magnam earum soluta debitis, non esse dolorum hic. Eveniet velit, reprehenderit sequi nisi quos adipisci molestias sunt officia pariatur voluptatem culpa aspernatur, voluptatibus soluta!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, possimus quod sunt saepe sit tenetur eaque provident. Pariatur, repellendus sapiente voluptatibus saepe laudantium ea a ipsum, esse nesciunt quia dolorum!
+        Maiores numquam, delectus fugiat molestias ad est! Minima quasi at illo alias eaque, reprehenderit, suscipit maxime amet ipsum ad assumenda quibusdam ab odit, numquam dolor! Eum soluta tempora hic natus?
+        Beatae, laborum repellat ipsa, deleniti totam magnam earum soluta debitis, non esse dolorum hic. Eveniet velit, reprehenderit sequi nisi quos adipisci molestias sunt officia pariatur voluptatem culpa aspernatur, voluptatibus soluta!</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, possimus quod sunt saepe sit tenetur eaque provident. Pariatur, repellendus sapiente voluptatibus saepe laudantium ea a ipsum, esse nesciunt quia dolorum!
         Maiores numquam, delectus fugiat molestias ad est! Minima quasi at illo alias eaque, reprehenderit, suscipit maxime amet ipsum ad assumenda quibusdam ab odit, numquam dolor! Eum soluta tempora hic natus?
         Beatae, laborum repellat ipsa, deleniti totam magnam earum soluta debitis, non esse dolorum hic. Eveniet velit, reprehenderit sequi nisi quos adipisci molestias sunt officia pariatur voluptatem culpa aspernatur, voluptatibus soluta!</p>
