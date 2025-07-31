@@ -9,36 +9,72 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        table {
-            width: 300px;
+        table { /*tamanho e linhas*/
+            width: 450px;
             border-collapse: collapse;
+            position: relative;
         }
 
-        td, th {
+        /* anotar no caderno*/
+        thead > tr > th { /*cabeçalho fixo*/
+            background-color: rgb(53, 53, 53);
+            position: sticky;
+            top: -1px;
+        }
+
+        caption { /*titulo fora da tabela*/
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        td, th { /*linhas e espaçamento */
             border: 1px solid black;
             padding: 6px;
         }
 
-        .num {
+        .num { /*posição dos numeros*/
             text-align: right;
         }
 
-        thead, tfoot {
-            background-color: gray;
+        thead, tfoot { /*cor do thead/tfoot*/
+            background-color: rgb(53, 53, 53);
             color: white;
         }
+
+        tbody > tr:nth-child(even) { /*efeito zebrado*/
+            background-color: lightgray;
+        }
+
 
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
+
+    <!--
+    ANATOMIA PARA TABELAS GRANDES:
+
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT   
+            TR, TD, TH
+    -->
+
     <table>
+        <caption>População das unidades federativas (exemplo)</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
+
         <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -160,10 +196,83 @@
                 <td>Acre</td>
                 <td class="num">7M</td>
             </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45M</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">30M</td>
+            </tr>
+            <tr>
+                <td>Brasília</td>
+                <td class="num">50M</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">21M</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">12M</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">7M</td>
+            </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45M</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">30M</td>
+            </tr>
+            <tr>
+                <td>Brasília</td>
+                <td class="num">50M</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">21M</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">12M</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">7M</td>
+            </tr>
+             <tr>
+                <td>São Paulo</td>
+                <td class="num">45M</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">30M</td>
+            </tr>
+            <tr>
+                <td>Brasília</td>
+                <td class="num">50M</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">21M</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">12M</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">7M</td>
+            </tr>
         </tbody>
+
         <tfoot>
             <tr>
-                <th>Total de habitantes:</th>
+                <th scope="row">Total de habitantes:</th>
                 <td class="num"><strong>xxxM</strong></td>
             </tr>
         </tfoot>
